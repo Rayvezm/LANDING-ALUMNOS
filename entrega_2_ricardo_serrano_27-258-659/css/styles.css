@@ -719,6 +719,7 @@ header {
 
 @media (width <=768px) {
 	body {
+		overflow-x: hidden;
 		background-image: url("../img/png/fondo_responsive.png");
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
