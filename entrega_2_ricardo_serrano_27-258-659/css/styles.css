@@ -6,7 +6,7 @@
 
 body {
 	overflow-x: hidden;
-	background-image: url("/img/jpg/fondo_landing.png");
+	background-image: url("../img/jpg/fondo_landing.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
