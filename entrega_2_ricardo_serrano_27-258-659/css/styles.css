@@ -663,10 +663,63 @@ header {
 	left: 850px;
 }
 
+.ligth_c {
+	font-size: 30px;
+}
 
-@media (width <= 768px) {
+.bold_sf {
+	font-size: 50px;
+}
+
+.ligth_n {
+	font-size: 40px;
+}
+
+.bold_se {
+	font-size: 40px;
+}
+
+.vainilla {
+	height: 300px;
+}
+
+.dulce_de_leche_section_2 {
+	height: 250px;
+}
+
+.titulo_3 {
+	padding-top: 140px;
+}
+
+.flips_dulce_de_leche_section_3 {
+	display: flex;
+	position: relative;
+	width: 100%;
+	left: 400px;
+	top: 200px;
+}
+
+.bolsa--primera,
+.bolsa--segunda,
+.bolsa--tercera,
+.bolsa--cuarta {
+	width: 150px;
+}
+
+.imagen_flips_vainilla {
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: -50px;
+	rotate: 150deg;
+	right: 400px;
+	width: 250px;
+	transition: transform ease-in-out;
+}
+
+@media (width <=768px) {
 	body {
-		background-image: url("/img/png/fondo_responsive.png");
+		background-image: url("../img/png/fondo_responsive.png");
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 	}
@@ -679,12 +732,14 @@ header {
 		width: 80%;
 		max-width: 902px;
 	}
+
 	.flips_dulce_de_leche_completo_section_3 {
-	width: 15%;
-    position: relative;
-    top: 200px;
-    left: 850px;
-}
+		width: 15%;
+		position: relative;
+		top: 200px;
+		left: 850px;
+	}
+
 	.titulo_3 {
 		display: flex;
 		flex-direction: column;
@@ -750,61 +805,5 @@ header {
 		width: 100%;
 		right: 0;
 		color: #402683;
-}
-	}
-
-	.ligth_c {
-		font-size: 30px;
-	}
-
-	.bold_sf {
-		font-size: 50px;
-	}
-
-	.ligth_n {
-		font-size: 40px;
-	}
-
-	.bold_se {
-		font-size: 40px;
-	}
-
-	.vainilla {
-		height: 300px;
-	}
-
-	.dulce_de_leche_section_2 {
-		height: 250px;
-	}
-
-	.titulo_3 {
-		padding-top: 140px;
-	}
-
-	.flips_dulce_de_leche_section_3 {
-		display: flex;
-		position: relative;
-		width: 100%;
-		left: 400px;
-		top: 200px;
-	}
-
-	.bolsa--primera,
-	.bolsa--segunda,
-	.bolsa--tercera,
-	.bolsa--cuarta {
-		width: 150px;
-	}
-
-	.imagen_flips_vainilla {
-		display: flex;
-		position: absolute;
-		left: 0;
-		top: -50px;
-		rotate: 150deg;
-		right: 400px;
-		width: 250px;
-		transition: transform ease-in-out;
 	}
 }
-
