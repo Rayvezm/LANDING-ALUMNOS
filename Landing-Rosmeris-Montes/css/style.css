@@ -577,7 +577,7 @@ body{
     }
     /* formulario sección cinco */
     .sec5{
-        width: 100vw;
+        width: 100%;
         height: 500px;
         background-image: url("../img/jpg/fondo.jpg");
         background-repeat: no-repeat;
@@ -1201,7 +1201,7 @@ body{
     .footer{
         position: relative;
         background-color:#4b95df;
-        width: 100vw;
+        width: 100%;
         height: 150px;
         color: white;
         font-weight: 500;
