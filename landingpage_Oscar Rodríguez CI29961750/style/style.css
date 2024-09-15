@@ -1,0 +1,582 @@
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family:Poppins;
+        }
+    
+        /* Estilos del header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #332423;
+        }
+
+    
+        /* Estilos del Hero */
+        .hero {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height: 87vh;
+            background: url(../img/jpg/fondo-hero.jpg) no-repeat center center/cover;
+            color: white;
+            padding: 20px;
+            gap: 20px;
+        }
+        
+        /* Contenedor del texto en PNG y los botones */
+        .hero-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 50%;
+            margin-bottom: 50px;
+        }
+
+        .hero h1{
+            display: none;
+        }
+    
+        /* Texto en PNG */
+        .hero-texto-img {
+            width: 70%; 
+            margin-bottom: 20px; 
+        }
+    
+        /* Botones debajo del texto PNG */
+        .hero-buttons {
+            display: flex;
+            gap: 10px;
+            background: none;
+        }
+        .hero-buttons button {
+            padding: 10px 45px;
+            font-size: 1rem;
+            font-weight: 700;
+            background-color: #332423;
+            color: #dfceb7;
+            border-radius: 10px;
+            border-color: #dfceb7;
+            border-width: 3px;
+            cursor: pointer;
+        }
+        .hero-buttons button:hover {
+            background-color: #f8bd3d;
+            color: #332423;
+        }
+    
+        /* Estilos de la imagen de productos */
+        .hero img.productos {
+            max-width: 50%;
+            height: auto;
+        }
+    
+        /* Estilos responsive */
+        @media (max-width: 768px) {
+            .hero {
+            flex-direction: column;
+            text-align: center;
+            height: auto;
+            }
+            .hero-left {
+            max-width: 100%;
+            align-items: center;
+            }
+            .hero img.productos {
+            max-width: 80%;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            header img {
+            width: 120px;
+            }
+            .hero-buttons button {
+            font-size: 0.9rem;
+            padding: 8px 16px;
+            }
+            .hero img.productos {
+            max-width: 90%;
+            }
+        }
+           /* Sección de puntos de información */
+    .info-section {
+        border: 6px solid #332423; 
+        padding: 60px;
+        margin: 40px auto;
+        max-width: 1500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-radius: 50px;
+        gap: 20px; }
+        
+
+        /* Estilos para cada punto */
+        
+        .info-point {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20%; 
+            text-align: center;
+        }
+        
+        .info-point img {
+            width: 150px; 
+            height: auto;
+            margin-bottom: 10px;
+        }
+    
+        .info-point h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #332423;
+            font-weight: 800;
+        }
+    
+        .info-point p {
+            font-size: 1rem;
+            color: #524741;
+            font-weight: 500;
+        }
+    
+        @media (max-width: 768px) {
+            .info-point {
+            width: 45%; 
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .info-point {
+            width: 100%; 
+            }
+        }
+
+/* Sección de productos con imagen de fondo */
+.productos-section {
+    background: url('../img/jpg/fondo-productos.jpg') no-repeat center center/cover;
+    padding: 180px 120px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+/* Tarjeta de producto */
+.product-card {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 18px 19px 14px -3px rgba(8,8,8,0.61);
+    transition: all 0.3s ease;
+    
+}
+
+/* Contenido interno de la tarjeta */
+.product-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Cara frontal de la tarjeta */
+.product-front {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+}
+.product-fronta {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+}
+
+.product-front img {
+    width: 160px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+.product-fronta img {
+    width: 230px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-top: 55px;
+}
+
+.product-front h4 {
+    font-size: 1rem;
+    margin-bottom: px;
+    font-weight: 800;
+    color: #332423;
+}
+.product-fronta h4 {
+    font-size: 1rem;
+    margin-bottom: px;
+    font-weight: 800;
+    color: #332423;
+}
+
+.product-front p {
+    font-size: 1rem;
+    color: #524741;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.product-fronta p {
+    font-size: 1rem;
+    color: #524741;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+
+.product-front button {
+    width: 90%;
+    height: 50px;
+    background-color: #f8bd3d;
+    color: #332423;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+.product-fronta button {
+    width: 90%;
+    height: 50px;
+    background-color: #f8bd3d;
+    color: #332423;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+
+.product-front button:hover {
+    background-color: #f8bd3d;
+}
+
+/* Tarjeta trasera (cara que se despliega) */
+.product-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 36, 35, 0.97);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    transform: translateY(100%);
+    transition: transform 0.5s ease; 
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.product-back h4 {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    font-weight: 900;
+}
+.product-back h5 {
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.product-back h6 {
+    font-size: 1rem;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.product-back hr {
+    width: 100%;
+    margin: 20px 0;
+    border-color: #fff;
+}
+
+.product-back p {
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 20px;
+}
+.product-back a{
+    width: 80%;
+    height: 50px;
+    background-color: #f8bd3d;
+    color: #332423;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-top: 360px;
+    margin-left: 10px;
+
+}
+.product-back button{
+    width: 80%;
+    height: 50px;
+    background-color: #f8bd3d;
+    color: #332423;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 10px;
+    
+}
+
+
+.product-back button:hover {
+    background-color: #f8bd3d;
+}
+
+/* Efecto hover: despliegue de la tarjeta trasera */
+.product-card:hover .product-back {
+    transform: translateY(0); /* Despliega la tarjeta trasera */
+}
+
+
+/* Responsivo para que las tarjetas estén una debajo de otra */
+@media (max-width: 1070px) {
+    .productos-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Sección CTA (Llamado a la acción) */
+.cta-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #f5f5f5;
+}
+
+.cta-left {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    
+}
+
+.cta-left h2 {
+    font-size: 5rem;
+    color: #332423;
+    font-weight: 900;
+    line-height:100px
+}
+
+.cta-left h4 {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.cta-left p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #332423;
+    line-height:25px
+}
+
+.cta-left button {
+    width: 50%;
+    height: 50px;
+    background-color: #f8bd3d;
+    color: #332423;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.cta-left button:hover {
+    background-color: #dfceb7;
+}
+
+.cta-right {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-right img {
+    width: 100%;
+    height: auto;
+}
+
+/* Modal emergente */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-logo {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.modal h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.modal p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.modal form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal form button {
+    width: 100%;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal form button:hover {
+    background-color: #0056b3;
+}
+
+/* Cerrar modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #332423;
+    color: white;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 200px;
+    height: auto;
+}
+
+.footer-right a {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(28%) hue-rotate(358deg) brightness(105%) contrast(100%);
+    color: white;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.footer-right a:hover {
+    color: #007bff;
+}
+
+/* Responsivo */
+@media (max-width: 1070px) {
+    .cta-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-left, .cta-right {
+        width: 100%;
+    }
+
+    .cta-right {
+        margin-top: 20px;
+    }
+    .cta-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0px;
+    
+}
+}
+

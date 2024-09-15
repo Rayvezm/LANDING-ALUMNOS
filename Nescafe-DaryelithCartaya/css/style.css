@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    scroll-behavior: smooth;
+}
+
+.encabezado{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    min-height: 85px;
+    width: 100%;
+}
+.barra-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    background: linear-gradient(130deg, rgb(97, 0, 0) 11%, rgba(255,0,0,1) 100%);
+    padding: 10px;
+    max-width: 650px;
+    height: 50px;
+    border-radius: 50px;
+}
+.logo-encabezado{
+    position: absolute;
+    left: 0;
+}
+.primer-banner{
+    background-image: url("../img/fondo-uno-01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 60px;
+}
+.barra-menu__lista{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    padding: 0;
+}
+.menu{
+    text-decoration: none;
+    color: #fff;
+}
+
+.primer-texto{
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 900%;
+    line-height: 60px;
+}
+.parrafo{
+    font-family: "Poppins";
+    font-size: 25px;
+    font-weight: 100%;
+}
+.boton{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    text-decoration: none;
+    color: rgb(252, 4, 4);
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 50px;
+    border-radius: 15px;
+}
+.header-cafes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.header-cafes__titulo{
+    color: rgb(255, 255, 255);
+    background-color: #9d2328;
+    padding: 2px 30px;
+    border-radius: 20px;
+    font-family: "Poppins";
+}
+.header-texto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.header-texto__encabezado{
+    font-family: "Poppins";
+    font-weight: 100;
+    font-size: 20px;
+}
+.header-receta{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.header-receta__titulo{
+    color: rgb(255, 255, 255);
+    background-color: #9d2328;
+    padding: 2px 30px;
+    border-radius: 20px;
+    font-family: "Poppins";
+}
+.carousel-item{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.contenido-productos{
+    background-image: url("../img/fondo-01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.contenido{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.taza-uno{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #c9c9c9;
+    box-shadow: 0px 0px 20px 5px #7e0f13;
+    padding: 30px;
+    border-radius: 40px;
+    align-items: center;
+    min-width: 300px;
+    max-width: 40px;
+    height: 350px;
+    justify-content: center;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.taza-dos{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #c9c9c9;
+    box-shadow: 0px 0px 20px 5px #7e0f13;
+    padding: 30px;
+    border-radius: 40px;
+    align-items: center;
+    min-width: 300px;
+    max-width: 40px;
+    height: 350px;
+    justify-content: center;
+    font-family: "Poppins";
+    font-size: 80%;
+    line-height: 12px;
+    text-align: center;
+}
+.taza-tres{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #c9c9c9;
+    box-shadow: 0px 0px 20px 5px #7e0f13;
+    padding: 50px;
+    border-radius: 40px;
+    align-items: center;
+    min-width: 300px;
+    max-width: 40px;
+    height: 350px;
+    justify-content: center;
+    font-family: "Poppins";
+    font-size: 80%;
+    line-height: 12px;
+    text-align: center;
+}
+.header-receta-info{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.header-receta-info__info{
+    font-family: "Poppins";
+    color: #9d2328;
+    font-weight: 600;
+}
+.receta-info{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Poppins";
+    font-weight: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.input{
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    border: 3px solid #9d2328;
+    border-radius: 30px;
+    padding: 5px 10px;
+    width: 20%;
+    text-align: center;
+    margin: 10px 250px;
+}
+.input-comprar{
+    font-family: "Poppins";
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9d2328;
+    border: 3px solid #9d2328;
+    border-radius: 30px;
+    padding: 5px 10px;
+    width: 20%;
+    margin: 10px 10px;
+    text-align: center;
+    margin: 10px 250px;
+}
+.pie-de-pagina{
+    background-color: rgb(39, 21, 1);
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+.logo-inferior-uno{
+    position: absolute;
+    left: 150px;
+}
+.logo-inferior-dos{
+    position: absolute;
+    right: 150px;
+    margin-top: 20px;
+}
+.info-abajo{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    padding: 0;
+}
+.info-footer{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 15px;
+    margin-top: 70px;
+}
+.contenido-contacto{
+    background-image: url("../img/fondo-01.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#filt, #filt2{
+    filter: invert(100%);
+}
+
+@media (width <= 768px){
+    .primer-banner{
+        background-image: url("../img/prueba-01.jpg");
+    }
+    .contenido-contacto{
+        background-image: url("../img/prueba-dos-01.jpg");
+    }
+}

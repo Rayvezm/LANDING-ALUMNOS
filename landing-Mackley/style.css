@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: PaytoneOne-Regular;
+    src: url("./tipografia/PaytoneOne-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #E62741;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    min-height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*header*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo img{
+    height: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    padding: 0 20px;
+    font-size: 17px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+}
+
+.navbar ul li a:hover {
+    color: #681038;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/*DCTO*/
+
+.dcto {
+    display: flex;
+    margin-top: 150px;
+    flex-basis: 50%;
+    padding-right: 120px;
+}
+
+.dcto-iz .btn {
+    display: inline-block;
+    padding: 13px 30px;
+    background-color: #F6D825;
+    color: #681038;
+    font-size: 15px;
+    border-radius: 17px;
+    box-shadow: 0 0 20px #681038;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+}
+
+
+.dcto-p img {
+    width: 80px;
+    margin: auto;
+}
+
+/* Comparte */
+
+.comparte {
+    background-color: #F5EEE8;
+}
+
+.comparte img {
+    border-radius: 50px 110px 0px 110px;
+    width: 550px;
+    height: 500px;
+    padding: 40px;
+}
+
+.comparte-txt {
+    font-size: 14px;
+    border-style: none;
+    color: #F5EEE8;
+    line-height: 1.2;
+    background-color: #681038;
+    width: 200px;
+    height: 50px;
+    padding: 40px;
+    border-radius: 50px 30px 50px 0px;
+    margin-left: 550px;
+}
+
+
+/* Producto */
+
+.productos {
+    background-color: #F5EEE8;
+}
+
+.productos-group h2 {
+    font-family: PaytoneOne-Regular;
+    font-size: 55px; 
+    padding: 20px;
+    line-height: 1.2;
+    color: #E62741; 
+    text-align: center;
+    font-weight: 900;
+}
+
+.productos-group img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+}
+
+.productos-tag h3 {
+    font-family: PaytoneOne-Regular;
+    color: #F6D825;
+}
+
+.productos-tag {
+    font-size: 14px;
+    border-style: none;
+    color: #F5EEE8;
+    line-height: 1.2;
+    background-color: #E62741;
+    width: 200px;
+    height: 50px;
+    padding: 40px;
+    border-radius: 30px 50px 0px 50px;
+}
+
+.productos-tag:hover {
+    transform: scale(1.05);
+}
+
+.productos a {
+    display: inline-block;
+    padding: 13px 30px;
+    background-color: #F6D825;
+    color: #681038;
+    font-size: 15px;
+    border-radius: 17px;
+    box-shadow: 0 0 20px #681038;
+}
+
+.btn-1:hover {
+    background-color: #ffffff;
+}
+
+/* Comentarios */
+
+.comentarios {
+    background-color: #F6D825;
+    padding: 50px 0;
+}
+
+.comentarios-arriba {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.comentarios-arriba h2 {
+    font-family: PaytoneOne-Regular;
+    font-size: 55px; 
+    padding: 20px;
+    line-height: 1.2;
+    color: #681038; 
+    text-align: center;
+    font-weight: 900;
+}
+
+.comentarios-card {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.opinion {
+    background-color: #F5EEE8;
+    width: 500px;
+    height: 200px;
+    padding: 50px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.opinion img {
+    max-height: 70px;
+    max-width: 70px;
+}
+
+.opinion p {
+    width: 100px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #2b201b;
+}
+
+
+/* para todo momento */
+
+.todo {
+    background-color: #F5EEE8;
+    padding: 30px 0;
+    position: relative;
+}
+
+.todo h2 {
+    font-family: PaytoneOne-Regular;
+    font-size: 55px;
+    padding: 20px;
+    line-height: 1.2;
+    color: #E62741; 
+    text-align: center;
+    font-weight: 900;
+}
+
+.todo img {
+    border-radius: 50px 110px 0px 110px;
+    width: 350px;
+    height: 500px;
+    margin-left: 90px;
+}
+
+.todo-contenedor {
+    font-size: 14px;
+    border-style: none;
+    color: #F5EEE8;
+    line-height: 1.2;
+    background-color: #E62741;
+    width: 200px;
+    height: 50px;
+    padding: 40px;
+    border-radius: 30px 50px 0px 50px;
+    margin-left: 50px;
+}
+
+.todo-contenedor:hover {
+    transform: scale(1.05);
+}
+
+.todo-content a {
+    display: inline-block;
+    padding: 13px 30px;
+    background-color: #F6D825;
+    color: #681038;
+    font-size: 15px;
+    border-radius: 17px;
+    box-shadow: 0 0 20px #681038;
+}
+
+
+
+/* SUSCRÍBETE */
+
+.subscripcion-pagina {
+    background-color: #681038;
+}
+
+.subscripcion-pagina img{
+    width: 500px;
+    height: 270px;
+}
+
+.subscripcion-pagina h4 {
+    color: #ffffff;
+}
+
+.enviar-button {
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #681038;
+    background-color: #ffffff; 
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    width: 180px; 
+    margin: 0 auto; 
+}
+
+.enviar-button:hover {
+    background-color: #F6D825;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #E62741;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.link {
+    display: flex;
+    gap: 15px;
+}
+
+.link img {
+    width: auto;
+    margin:  25;
+}
+
+/* responsive */
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 20%;
+        position: relative;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #E62741;
+        display: none;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #1F0C42;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .header-content {
+        padding: 30px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .header-txt {
+        padding: 0 0 40px 0;
+    }
+
+    .header-img img {
+        width: 400px;
+    }
+
+    .footer {
+        padding: 30px;
+        text-align: center;
+    }
+}

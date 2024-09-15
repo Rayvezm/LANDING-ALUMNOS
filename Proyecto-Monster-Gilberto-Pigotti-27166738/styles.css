@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* intente agregar unos rayones que eran una imagen que hiba a acompanar al background-image en el diseno original, pero no encontre como hacer que una se mantenga fija esta la de abajo y que la otra acompanara al scroll con "background-attachment: fixed"  sin volver un desmadre la distribucion asi que a mi falta de conocimiento omiti esa imagen */
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(img/jpg/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+}
+/* esta tipografias no tiene asentos asi que sorry por la falta de ellos, inglis is life xd */
+@font-face {
+    font-family: 'Chernobil';
+    src: url(font/Chernobyl.otf);
+    font-weight: bold;
+    font-style: bold ;
+}
+.capture {
+    font-family: 'Chernobil';
+}
+
+/* =================================================================================== */
+                                            /* header */
+
+.header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 5px 20px;
+    box-shadow: 5px 0px 30px #000;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 40px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links li a:hover {
+    color: rgb(184, 184, 184);
+}
+
+.header .nav-links a {
+    font-weight: 700;
+    font-family: 'Chernobil', sans-serif;
+    color: rgba(0, 255, 34, 0.774);
+    text-decoration: none;
+}
+
+.header .btn button {
+    background-color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-family: 'Chernobil', sans-serif;
+    color: rgba(0, 0, 0, 0.774);
+    padding: 9px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header .btn button:hover {
+    background-color: rgb(182, 182, 182);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .header .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .nav-links li {
+        padding: 10px 0;
+    }
+
+    .header .btn button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* =================================================================================== */
+                                            /* Monster Energy */
+
+.image-section {
+    width: 100%;
+}
+
+.responsive-image {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .responsive-image {
+        content: url('img/png/Monster\ energy\ \(2\).png');
+    }
+}
+
+/* ========================================================================================= */
+                                            /* Contenido */
+
+.content-section {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-container h1 {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-family: Chernobil;
+}
+
+.text-container h2 {
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-family: Chernobil;
+    font-size: 30px;
+}
+
+.text-container button {
+    padding: 10px 20px;
+    background-color: rgba(0, 255, 34, 0.774);
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Chernobil;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.text-container button:hover {
+    background-color:rgba(5, 124, 21, 0.774);
+}
+
+/* ========================================================================================= */
+
+ /* Carrusel */
+
+.carrusel h2 {
+    text-align: center;
+    font-size: 100px;
+    padding-top: 50px;
+    font-family: Chernobil;
+}
+
+.slider-frame {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 150px;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+/* Aqui si me enrede con las medidas para tf por eso se ve mas pequeno cuando se pasa al formato minimo */
+@media (max-width: 768px) {
+    .carrusel h2 {
+        font-size: 50px;
+        padding-top: 25px;
+    }
+
+    .slider-frame ul {
+        width: 300%;
+    }
+
+    @keyframes slide {
+        0% {margin-left: 0;}
+        33% {margin-left: 0;}
+        38% {margin-left: -100%;}
+        71% {margin-left: -100%;}
+        76% {margin-left: -200%;}
+        100% {margin-left: -200%;}
+    }
+}
+
+@media (max-width: 480px) {
+    .carrusel h2 {
+        font-size: 30px;
+        padding-top: 15px;
+    }
+
+    .slider-frame ul {
+        width: 200%;
+    }
+
+    @keyframes slide {
+        0% {margin-left: 0;}
+        50% {margin-left: 0;}
+        55% {margin-left: -100%;}
+        100% {margin-left: -100%;}
+    }
+}
+
+/* ========================================================================================= */
+
+.galleryh2 {
+    text-align: center;
+    font-size: 100px;
+    padding-top: 50px;
+    font-family: Chernobil;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 200PX;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    border-top: 4px solid rgba(0, 255, 34, 0.774);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    font-family: Chernobil;
+}
+
+.product p {
+    color: #28a745;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Chernobil;
+}
+
+.product button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .product {
+        padding: 10px;
+    }
+
+    .product h3 {
+        font-size: 1em;
+    }
+
+    .product p {
+        font-size: 0.9em;
+    }
+
+    .product button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+/* ========================================================================================= */
+
+
+.last-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.last-h3 {
+    text-align: center;
+    font-family: Chernobil;
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+/* Aqui mi complicacion fue que si usaba la etiqueta button se hiba el suscribir a la parte izquierda de la pantalla debido a las propiedades que le di al body, asi que decidi cambiarla por un link pero a pesar de usar decoration:none no se me quito la linea de subrayar desconosco el motivo */
+.last-button {
+    text-align: center;
+    text-decoration: none;  
+    padding: 10px 20px;
+    background-color: rgba(0, 255, 34, 0.774);
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Chernobil;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.last-button:hover {
+    background-color: rgba(21, 124, 35, 0.774);
+}
+
+@media (max-width: 768px) {
+    .last-h3 {
+        font-size: 40px;
+    }
+
+    .last-button {
+        font-size: 30px;
+        padding: 8px 16px;
+    }
+}
+
+
+
+/* ========================================================================================= */
+
+                                            /* Footer */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 -15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-section img {
+    max-height: 100px;
+    transition: transform 0.3s;
+}
+
+.footer-section img:hover {
+    transform: scale(1.1);
+}
+
+.social-media h3 {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.social-icons img {
+    max-height: 50px;
+}
+
+.social-icons li {
+    display: inline;
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+    flex-direction: column;
+    height: auto;
+    }
+
+    .footer-section {
+    margin-bottom: 20px;
+    }
+
+    .social-icons {
+    flex-direction: row;
+    gap: 20px;
+    }
+}

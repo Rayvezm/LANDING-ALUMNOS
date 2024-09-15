@@ -1,0 +1,400 @@
+/* ----------- Normalización básica ----------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ----------- Fuentes ----------- */
+
+/* Bebas-Regular */
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/Bebas-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Bebas-Regular M */
+@font-face {
+    font-family: 'Bebas M';
+    src: url('../fonts/Bebas-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Gabriola */
+@font-face {
+    font-family: 'Gabriola';
+    src: url('../fonts/Gabriola.woff') format('woff'),
+         url('../fonts/Gabriola.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Montserrat-Regular */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff') format('woff'),
+         url('../fonts/Montserrat-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Estilos generales para el scrollbar */
+::-webkit-scrollbar {
+    width: 8px;  /* Ancho del scrollbar */
+  }
+  
+  /* Estilos de la pista del scrollbar (track) */
+  /* Scrollbar General */
+::-webkit-scrollbar {
+    width: var(--scroll-width);
+  }
+  
+  /* Estilos del track */
+  ::-webkit-scrollbar-track {
+    background-color: var(--scroll-track-color);
+    border-radius: var(--scroll-radius); /* Bordes redondeados del track */
+  }
+  
+  /* Estilos del thumb (parte desplazable) */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: var(--scroll-radius); /* Bordes redondeados en todo el thumb */
+    border: 2px solid var(--scroll-border);
+  }
+  
+  /* Estilos del thumb cuando se pasa el cursor */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scroll-thumb-hover-color);
+  }
+  
+  /* Otros navegadores */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-thumb-color) var(--scroll-track-color);
+  }
+  
+  /* Bordes redondeados solo en la parte superior e inferior del thumb */
+  ::-webkit-scrollbar-thumb {
+    border-radius: var(--scroll-radius) var(--scroll-radius) 0 0; /* Parte superior redondeada */
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    border-radius: 0 0 var(--scroll-radius) var(--scroll-radius); /* Parte inferior redondeada */
+  }
+  body{
+    font-family: 'Bebas', sans-serif;
+  }
+ .header{
+    background: 
+        url('../img/texturas/textura-azul.svg') no-repeat center center / cover;
+    /*height: 100vh;*/
+    margin: 0;
+    
+}
+
+.navbar {
+    background-color: #00458b00; /* Color de fondo de la barra */
+}
+
+.navbar-brand img {
+    height: 50px; /* Ajusta el tamaño del logo */
+}
+
+/* Fondo blanco con bordes redondeados para el menú de texto */
+
+.navbar-nav .nav-link:hover {
+    background-color:  #1779da; /* Cambio de color en hover */
+    
+    color: #ffffff;
+    transition: all 1.s;
+}
+
+.iconos-navbar {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #ffffff; /* Color de los íconos */
+}
+
+.iconos-navbar:hover {
+    color: #1779da; /* Cambio de color en hover */
+}
+
+/* Estilo para mantener los íconos alineados con el menú en pantallas grandes */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+.navbar-nav{
+    font-size: 2em;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #4a2b13; /* Color del texto */
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 25px; /* Bordes redondeados */
+}
+.navbar-toggler{
+    border: none !important;
+    background-color: #ffffff; /* Fondo blanco */
+}
+/*sections*/
+
+.section-1{
+    background: 
+        url('../img/texturas/textura-marronpro.png') no-repeat center center / cover;
+    /*height: 100vh;*/
+    margin: 0;
+}
+.section-2{
+    margin: 0;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.section-3{
+    background: 
+        url('../img/texturas/textura-azul.svg') no-repeat center center / cover;
+    /*height: 100vh;*/
+    margin: 0;
+}
+.section-4{
+    background: 
+        url('../img/texturas/textura-marronpro.png') no-repeat center center / cover;
+    /*height: 100vh;*/
+    margin: 0;
+}
+
+.font-montserrat{
+    font-family: 'Montserrat', sans-serif !important;
+}
+.font-gabriola{
+    font-family: 'Gabriola', sans-serif !important;
+}
+
+/* fonts */
+
+
+/* transparencias*/
+.bg-transparent{
+    background: transparent !important;
+    border: none !important;
+}
+/* colores de texto*/
+
+.text-marron{
+    color: #3C2415 !important;
+}
+
+/* colores de fondo*/
+.bg-marron{
+    background: #3C2415 !important;
+}
+.text-justify {
+    text-align: justify;
+  }
+  .text-underline {
+    text-decoration: underline;
+    text-decoration-color: #3C2415;
+  }
+/* font size*/
+.font-size-1{
+    font-size: 0.5em !important;
+}
+.font-size-2{
+    font-size: 2em !important;
+}
+.font-size-3{
+    font-size: 3em !important;
+}
+.font-size-4{
+    font-size: 4em !important;
+}
+.font-size-5{
+    font-size: 5em !important;
+}
+/* radios*/
+.radio-1{
+    border-radius: 1em;
+}
+/*hv*/
+.min-vh-70{
+    min-height: 70vh !important;
+}
+/* interlineados*/
+.reduced-line-height {
+    line-height: 0;
+  }
+/* img */
+
+.img-cover {
+    object-fit: cover;
+  }
+ 
+
+  /*cards*/
+  .card-title-producto{
+    margin-bottom: 0.5rem !important;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  /* Estilos personalizados */
+.image-box {
+    /*width: 40%;*/
+    background: linear-gradient(to right, #64CCEE, #308DC2) !important;
+    border-radius: 10px;
+    height: 24.375em;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .rating i {
+    color: #64CCEE;
+    font-size: 1.5rem;
+  }
+    
+  .map-container {
+    flex-grow: 1;
+    height: 100%;
+    margin-left: -1rem !important;
+  }
+  
+/* botones */
+.btn-rounded{
+    border-radius: 1em;
+}
+.btn-card{
+    background: linear-gradient(to right, #64CCEE, #308DC2) !important;
+}
+.btn-star{
+    color: #3C2415;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+.btn-star:hover{
+    color: #854d2b;
+    border-color: #ac673c;
+}
+
+.btn-heart{
+    color: #3C2415;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+.btn-heart:hover{
+    transform: scale(1.1);
+}
+
+.footer {
+    background:linear-gradient(to right, #64CCEE, #308DC2) !important; /* Color de fondo azul claro */
+    padding: 2rem;
+}
+/* Hacer la modal transparente */
+.modal-content {
+    border: none; /* Sin bordes */
+  }
+
+  /* Centrar el título de la modal */
+  .modal-title {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Centrar la imagen en la modal */
+  .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  /* Estilo de la imagen */
+  .modal-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar la imagen */
+  }
+
+/* medias querys*/
+
+/* Para pantallas extra pequeñas (menos de 576px) */
+@media (max-width: 575.98px) {
+    .iconos-navbar {
+        font-size: 1.5rem;
+        margin-left: 0rem;
+    }
+    .image-box {
+        height: 9.375em;
+      }
+      .img-map{
+        height: 338px;
+        object-fit: cover;
+        width: 346px;
+      }
+  }
+  
+  /* Para pantallas pequeñas (de 576px a 767.98px) */
+  @media (min-width: 576px) {
+    .iconos-navbar {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
+    .image-box {
+        height: 9.375em;
+      }
+      .img-map{
+        height: 338px;
+        object-fit: cover;
+        width: 346px;
+      }
+  }
+  
+  /* Para pantallas medianas (de 768px a 991.98px) */
+  @media (min-width: 768px) {
+    .iconos-navbar {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+    }
+    .image-box {
+        height: 9.375em;
+      }
+      .img-map{
+        width: 100%;
+        height: 100%; object-fit: cover;}
+    
+  }
+  
+  /* Para pantallas grandes (de 992px a 1199.98px) */
+  @media (min-width: 992px) {
+    .iconos-navbar {
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+   /*margenes*/
+    .m-star{
+        margin-right: 5rem !important;
+    }
+    .image-box {
+        height: 24.375em;
+    }
+  }
+  
+  /* Para pantallas extra grandes (de 1200px en adelante) */
+  @media (min-width: 1200px) {
+   
+  }
+
+
+  

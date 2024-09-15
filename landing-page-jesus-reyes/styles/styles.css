@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+/* ENCABEZADO */
+.content__header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+    align-items: center;
+}
+.logo--farmatodo{
+    min-width: 200px;
+    max-width: 105px;
+}
+.logo--gotas{
+    min-width: 20px;
+    max-width: 65px;
+}
+.content{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+/* INICIO DE LA LANDING */
+.logo__kitkat{
+    width: 90%;
+}
+.content__articule-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content__headerarticule{
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+}
+.content__articule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 45px;
+    width: 50%;
+    min-width: 450px;
+    min-height: 580px;
+    position: relative;
+    z-index: 20;
+}
+.content__h1{
+    font-family: akzidentz;
+    color: rgb(180, 18, 18);
+    font-size: 300%;
+    max-width: 350px;
+}
+.content__header-h2{
+    margin-top: 50px;
+}
+.content__h2{
+    font-family: akzidentz;
+    color: rgb(180, 18, 18);
+    font-size: 50px;
+    line-height: 45px;
+}
+.content__h2-sp{
+    font-size: 115px;
+    float: left;
+    padding: 19px 9px 0 0;
+    margin-top: 4px;
+}
+.content__p{
+    font-family: helvetica;
+    text-align: justify;
+    font-style: oblique;
+    color: rgb(173, 15, 15);
+    width: 100%;
+    
+}
+.content__img{
+    max-width: 100%;
+    min-width: 480px;
+}
+.content__figure{
+    transform: translate(-90px, 116px);
+    width: 100%;
+}
+/* CHOCOLATE/FRESA Y CHOCOLATE BLANCO */
+.articule__img-choco{
+    width: 370px;
+    filter: drop-shadow(5px 5px 8px #111);
+    /* position: absolute; */
+    /* right: 110px;
+    top: 320px; */
+}
+.articule__img-fresa{
+    width: 430px;
+    padding-top: 80px;
+    filter: drop-shadow(5px 5px 8px #111);
+}
+.articule--fresa{
+    background-image: url("../img/fondo-chocolate-fresa.webp");
+    height: 880px;
+    z-index: 10;
+}
+.figure-fresa{
+    animation: floatin 2s infinite ease-in-out;
+}
+@keyframes floatin {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(10px);}
+}
+.content__articule-titulo{
+    color: #fff;
+    font-size: 50px;
+    font-family: akzidentz;
+    width: 380px;
+    text-align: center;
+}
+.articule--chocolate{
+    background-image: url("../img/fondo-chocolate-blanco.webp");
+    background-size: cover;
+    height: 880px;
+    row-gap: 150px;
+    z-index: 10;
+}
+.figure-choco{
+    animation: floatin 2s infinite ease-in-out;
+}
+@keyframes floatin {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(10px);}
+}
+.titulo--fresa{
+    order: 2;
+    padding-top: 50px;
+}
+.titulo--chocolate{
+    padding-top: 45px;
+}
+/* PEDIR AQUI TU VAINA */
+.articule--pedir{
+    background-color: #de0603;
+    row-gap: 20px;
+    height: 648px;
+}
+.logo__kitkat-otro{
+    width: 300px;
+}
+.content__pedir{
+    font-family: akzidentz;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px;
+}
+.p--pedir{
+    color: #fff;
+    width: 400px;
+}
+.pedir--modi{
+text-shadow: 5px 3px 20px #000;
+font-size: 70px;
+animation: shake 1s infinite ease-in-out;
+}
+@keyframes shake {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+}
+/* FORMULARIO FARMATODOGICO */
+.img__logoform{
+    width: 100px;
+    margin-bottom: 50px;
+}
+.articule--form{
+    background-color: #de0603;
+    height: 648px;
+    justify-content: center;
+}
+.content__form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.content__form-input{
+    font-family: futura;
+    border: none;
+    width: 160px;
+    height: 25px;
+    padding: 18px 5px;
+    border-radius: 3px;
+    outline: none;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+}
+.form-text{
+    width: 323px;
+    height: 100px;
+    resize: none;
+}
+.content__form-btn{
+    font-family: akzidentz;
+    color: #de0603;
+    font-size: 20px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.form__info{
+    border: none;
+}
+/* PIE DE PAGINA */
+.footer__farmatodo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+.footer-icon{
+    min-width: 24px;
+    max-width: 45px;
+}
+.copyright{
+    font-family: futurahevy;
+    color: #298bc7;
+}
+.content__figure-oculto{
+    display: none;
+}
+.content__header-h2-oculto{
+    display: none;
+}
+/* RESPONSIVE */
+
+@media (width <= 915px){
+    .content__articule{
+        min-width: auto;
+    }
+    .logo--gotas{
+        display: none;
+    }
+    .articule--uno{
+        order: 2;
+        background-color: #d1d0d0;
+    }
+    .articule--dos{
+        order: 1;
+        min-height: auto;
+        background-color: #d1d0d0;
+    }
+    .articule--fresa{
+        order: 3;
+    }
+    .articule--chocolate{
+        order: 4;
+    }
+    .articule--pedir{
+        order: 5;
+    }
+    .articule--form{
+        order: 6;
+    }
+    .content__articule{
+        width: 100%;
+    }
+    .footer__farmatodo{
+        flex-direction: column;
+        row-gap: 20px;
+        order: 2;
+    }
+    .form__info{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        width: 323px;
+    }
+    .content__form-input{
+        width: 323px;
+    }
+    .content__header-h2{
+        padding: 0 45px;
+    }
+    .content__header-h2-oculto .content__h2{
+        font-size: 37px;
+        line-height: 35px;
+        width: 290px;
+        text-align: start;
+    }
+    .content__header-h2-oculto .content__h2-sp{
+        font-size: 87px;
+    }
+    .content__figure-oculto{
+        display: initial;
+    }
+    .content__figure{
+        display: none;
+    }
+    .content__header-h2-oculto{
+        display: initial;
+        padding-bottom: 20px;
+        background-color: #fff;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .content__header-h2{
+        display: none;
+    }
+    .content__headerarticule{
+        justify-content: center;
+        text-align: center;
+    }
+    .content__p{
+        text-align: center;
+        padding: 45px 0;
+    }
+    .titulo--fresa{
+        order: 0;
+    }
+    .content__pedir{
+        font-size: 35px;
+    }
+    .articule--pedir{
+        row-gap: 0px;
+    }
+    .pedir--modi{
+        font-size: 70px;
+        padding-bottom: 30px ;
+        }
+}

@@ -1,0 +1,12 @@
+@font-face {
+    font-family:Monserratva;
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family:Monserratit;
+    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family:Monserrabold;
+    src: url("../fonts/Montserrat-Bold_0.otf") format("truetype");
+}

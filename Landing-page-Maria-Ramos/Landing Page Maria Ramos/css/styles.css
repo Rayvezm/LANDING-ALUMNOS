@@ -1,0 +1,329 @@
+:root {
+  --azul-claro: #007fcd;
+  --azul-oscuro: #002e5e;
+  --amarillo: #ffd700;
+  --azul-oscuro-transparencia: rgba(0, 46, 94, 0.30);
+  --azul-claro-transparencia: rgba(0, 127, 205, 0.7);
+  --texto-claro: rgba(255, 255, 255, 0.7);
+}
+
+.bg-primary {
+  background-color: var(--azul-claro) !important;
+}
+
+nav#buttons-nav {
+  background-color: var(--azul-claro) !important;
+}
+
+
+.btn-primary {
+  background-color: var(--azul-claro-transparencia) !important;
+  border-color: var(--azul-oscuro) !important;
+  border-radius: 10rem !important;
+}
+
+.btn-primary#ver-mas {
+  border-radius: 0 10rem 10rem 10rem !important;
+}
+
+.btn:hover {
+  background-color: var(--azul-oscuro) !important;
+}
+
+.form-control {
+  border-radius: 10rem !important;
+  border-color: var(--azul-oscuro) !important;
+  border-width: 2px;
+}
+
+form .btn-primary {
+  border-top-left-radius: 0rem !important;
+  border-top-right-radius: 1rem !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.btn-link {
+  color: var(--azul-claro) !important;
+}
+
+.btn-link:hover {
+  color: var(--azul-oscuro) !important;
+  background-color: transparent !important;
+}
+
+.me-2 {
+  margin-right: 0rem !important;
+}
+
+.me-2.form-control {
+  border-radius: 10rem 0rem 0rem 10rem !important;
+}
+
+.nav a {
+  color: white !important;
+}
+
+.nav a:hover {
+  color: var(--texto-claro) !important;
+}
+
+.hero {
+  background-image: url("../images/products/serum-product-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.col-md-4 .form-control {
+  background-color: var(--azul-oscuro-transparencia) !important;
+  border-color: var(--azul-oscuro) !important;
+  color: white !important;
+}
+
+#nombre::placeholder,
+#correo::placeholder,
+#contrasena::placeholder {
+  color: var(--texto-claro) !important;
+}
+
+#nombre {
+  border-radius: 0rem 10rem 10rem 10rem !important;
+}
+
+#contrasena {
+  border-radius: 10rem 0rem 10rem 10rem !important;
+}
+
+#register-button {
+  border-radius: 10rem !important;
+}
+
+
+p.lead {
+  font-size: 1.75rem;
+  color: var(--azul-oscuro) !important;
+}
+
+.card-body,
+.card.bg-dark,
+.h-100 {
+  background-color: var(--azul-oscuro-transparencia) !important;
+  border-radius: 1rem !important;
+}
+
+.badge.bg-warning {
+  background-color: var(--amarillo) !important;
+  color: var(--azul-oscuro) !important;
+  border-radius: 10rem !important;
+}
+
+.product-grid .badge.bg-warning {
+  background-color: var(--amarillo) !important;
+  color: var(--azul-oscuro) !important;
+  border-radius: 0 10rem 10rem 10rem !important;
+  width: 3rem !important;
+  height: 3rem !important;
+  font-size: 1.2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.product-grid .btn-primary {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  font-size: 3.5rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-weight: 150;
+}
+
+.product-grid .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-grid .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.product-grid .img-fluid {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+  margin-top: auto;
+}
+
+.card-title {
+  color: white !important;
+  margin-bottom: 1rem !important;
+}
+
+.img-fluid {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+}
+
+.inspiration-banner {
+  background-image: url("../images/banner/inspiration-banner-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.inspiration-banner .container {
+  position: relative;
+  z-index: 3;
+  height: 750px;
+}
+
+.inspiration-banner #call-to-action {
+  background-color: var(--texto-claro) !important;
+  border-radius: 2rem !important;
+  height: fit-content;
+}
+
+.inspiration-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 46, 94, 0.5);
+  z-index: -1;
+}
+
+.mobile-menu {
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%);
+}
+
+.mobile-menu.visible {
+  transform: translateY(0);
+}
+
+footer.bg-dark {
+  background-color: var(--azul-oscuro) !important;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+body .btn.btn-secondary {
+  color: var(--azul-oscuro) !important;
+  background-color: #fff;
+  border-color: var(--azul-oscuro) !important;
+  border-radius: 10rem 10rem 0 10rem !important;
+  font-size: 1.5em;
+  margin-left: 24px;
+  height: 2em;
+  width: 2em;
+}
+
+body .btn.btn-secondary:hover {
+  color: #fff !important;
+  background-color: var(--azul-oscuro) !important;
+  border-color: var(--azul-oscuro) !important;
+}
+
+.btn-secondary {
+  --bs-btn-color: var(--azul-claro);
+  --bs-btn-bg: #6c757d;
+}
+
+  @media (max-width: 992px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media (min-width: 1441px) {
+    .inspiration-banner .container {
+      height: 1000px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #hero-product {
+      display: none;
+    }
+    .header-content {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .navbar-toggler {
+      order: 1;
+    }
+
+    #navbarNav {
+      order: 4;
+      width: 100%;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-item {
+      margin: 0.5em 0;
+    }
+
+    .navbar-toggler {
+      color: var(--azul-claro) !important;
+      font-size: 1.5em;
+    }
+
+    #navbarNav {
+      color: var(--azul-oscuro) !important;
+    }
+
+    nav {
+      text-align: center;
+      padding: 16px;
+    }
+
+    nav#buttons-nav {
+      background-color: #fff !important;
+    }
+
+    nav.navbar.navbar-expand-lg {
+      justify-content: center;
+    }
+
+    .navbar-brand {
+      margin-bottom: 8px;
+    }
+
+    .inspiration-banner {
+      background-image: url("../images/banner/inspiration-banner-bg-mobile.jpg");
+    }
+
+  }

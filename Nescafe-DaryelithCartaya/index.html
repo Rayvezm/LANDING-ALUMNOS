@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo-original.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <title>NESCAFE</title>
+</head>
+
+<body class="body">
+    <header class="encabezado">
+        <figure class="logo-encabezado">
+            <img src="./img/logo-positivo.png" alt="logo-positivo" width="200px">
+        </figure>
+        
+<nav class="navbar navbar-expand-lg barra-menu">
+  <div class="container-fluid">
+    <button class="navbar-toggler outline-none border-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav gap-4">
+        <li class="nav-item">
+          <a href="#NUESTROS-CAFES" class="nav-link active text-white menu" aria-current="page" href="#">NUESTROS CAFES</a>
+        </li>
+        <li class="nav-item">
+          <a href="#RECETAS" class="nav-link text-white menu" href="#">RECETAS</a>
+        </li>
+        <li class="nav-item">
+          <a href="#CONTACTO" class="nav-link text-white menu" href="#">CONTACTO</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+        <section class="primer-banner">
+            <article>
+                <header class="primer-texto">
+                    <h1>Empieza tus mañanas <br> de la mejor manera</h1>
+                </header>
+                <p class="parrafo">Con el delicioso sabor de NESCAFÉ, <br> Con sabor y aroma incomparables, 100%
+                    soluble.</p>
+                <footer>
+                    <button class="boton">
+                        <a href="#formulario" class="boton">Obtener</a>
+                    </button>
+                </footer>
+            </article>
+        </section>
+        <section id="NUESTROS-CAFES" class="contenido-productos">
+            <header class="header-cafes p-5">
+                <h2 class="header-cafes__titulo">Nuestros cafes</h2>
+            </header>
+            <header class="header-texto">
+                <h4 class="header-texto__encabezado">100% Solubles</h4>
+            </header>
+            <article class="CLASICO-producto">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <article class="taza-uno mx-auto">
+                            <figure>
+                                <img src="./img/BLACK-producto.png" alt="producto-uno" width="250px" height="250px">
+                            </figure>
+                            <p>Sabor y aroma <br> más intenso</p>
+                        </article>
+                      </div>
+                      <div class="carousel-item">
+                        <article class="taza-dos mx-auto">
+                            <figure>
+                                <img src="./img/CLASICO-producto.png" alt="producto-dos" width="250px" height="250px">
+                            </figure>
+                            <p>Con sabor y aroma <br> incomparables</p>
+                        </article>
+                      </div>
+                      <div class="carousel-item">
+                        <article class="taza-tres mx-auto">
+                            <figure>
+                                <img src="./img/DECAF-producto.png" alt="producto-tres" width="250px" height="250px">
+                            </figure>
+                            <p>Sabor, cuerpo y aroma <br> inigualable</p>
+                        </article>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" id="filt" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" id="filt2" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </article>
+        </section>
+        <section id="RECETAS" class="contenido-recetas">
+            <header class="header-receta p-5">
+                <h2 class="header-receta__titulo">Recetas</h2>
+            </header>
+            <div class="d-flex flex-wrap contenido py-5" >
+            <article class="taza-uno">
+                <figure>
+                    <img src="./img/taza-uno.jpg" alt="receta-uno" width="250px" height="250px" class="rounded-5">
+                </figure>
+                <h6>Cappuccino Clásico</h6>
+                <p>Un clásico instantáneo</p>
+            </article>
+            <article class="taza-dos">
+                <figure>
+                    <img src="./img/taza-dos.jpg" alt="receta-dos" width="250px" height="250px" class="rounded-5">
+                </figure>
+                <h6>Cappuccino de almendras</h6>
+                <p>Un toque de nueces en un <br> clásico de clásicos</p>
+            </article>
+            <article class="taza-tres">
+                <figure>
+                    <img src="./img/taza-tres.jpg" alt="receta-tres" width="250px" height="250px" class="rounded-5">
+                </figure>
+                <h6>Café helado de moca</h6>
+                <p>Una delicia de chocolate <br> helado</p>
+            </article>
+            </div>
+            <header class="header-receta-info">
+                <h3 class="header-receta-info__info">¡Despierta tus sentidos con Nescafé!</h3>
+            </header>
+            <p class="receta-info">Descubre el sabor de nuestras recetas irresistibles <br> que realzarán tu experiencia del café</p>
+        </section>
+        <section id="CONTACTO" class="contenido-contacto">
+            <article>
+                <form id="formulario" class="form p-5">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" class="input">
+                    <input type="email" id="email" name="email" placeholder="Correo" class="input">
+                    <textarea id="mensaje" name="mensaje" rows="1" cols="10" placeholder="Solicitud" class="input"></textarea>
+                    <input type="submit" value="Comprar" class="input-comprar">
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer class="pie-de-pagina">
+        <figure class="logo-inferior-uno">
+            <img src="./img/logo-original-positivo.png" alt="logo-original-positivo" width="100px">
+        </figure>
+        <figure class="logo-inferior-dos">
+            <img src="./img/Farmatodo_logo.png" alt="Farmatodo_logo" width="100px">
+        </figure>
+        <div class="info-abajo">
+            <a href="Términos y Condiciones" class="info-footer"> Términos y Condiciones</a>
+            <a href="Politica de privacidad" class="info-footer"> Politica de privacidad</a>
+            <a href="Nuestra Política de Cookies" class="info-footer"> Nuestra Política de Cookies</a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.js"> </script>
+</body>
+
+</html>

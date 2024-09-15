@@ -1,0 +1,810 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	background-image: url("/img/jpg/fondo_landing.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenido {
+	min-height: 100vh;
+}
+
+.cabecera {
+	display: flex;
+	position: relative;
+	background-color: #402683;
+	width: 100%;
+	height: 75px;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	position: relative;
+	max-width: 400px;
+	min-width: 200px;
+	padding: 10px;
+	transition: 400ms ease-in-out;
+}
+
+.logo:hover {
+	scale: 1.04;
+	transition: 400ms ease-in-out;
+}
+
+.logo:active {
+	scale: 1.0;
+	transition: 400ms ease-in-out;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.section_1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 900px;
+	z-index: 10;
+}
+
+.imagen_1 {
+	top: 450px;
+	position: absolute;
+}
+
+.imagenes_1 {
+	display: flex;
+	position: relative;
+	width: 100%;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.imagen_flips_vainilla {
+	display: flex;
+	position: absolute;
+	left: 200px;
+	rotate: 150deg;
+	top: 100px;
+	width: 260px;
+	transition: transform ease-in-out;
+}
+
+.choco_splash_1 {
+	display: flex;
+	position: relative;
+	top: -380px;
+	right: 325px;
+	width: 100%;
+	max-width: 902px;
+}
+
+.imagenes_2 {
+	display: flex;
+	position: absolute;
+	justify-content: space-between;
+	width: 100%;
+	top: 0;
+}
+
+.vainilla {
+	object-fit: contain;
+	left: 300px;
+	transition: transform ease-in-out;
+}
+
+.dulce_de_leche_section_2 {
+	display: flex;
+	position: relative;
+	top: 400px;
+	height: 250px;
+	transition: transform ease-in-out;
+}
+
+.texto_1 {
+	display: flex;
+	position: absolute;
+	top: 160px;
+	right: 70px;
+	z-index: 20;
+	flex-direction: column;
+	align-items: end;
+	color: aliceblue;
+	filter: drop-shadow(10px 0 8px #000000ad);
+}
+
+.ligth_italic_dl {
+	font-family: gotham-light-italic;
+	text-transform: uppercase;
+	font-size: 145px;
+}
+
+.bold_d {
+	font-family: Gotham-bold;
+	text-transform: uppercase;
+	font-size: 105px;
+}
+
+.ligth_italic_tv {
+	font-family: gotham-light-italic;
+	text-transform: uppercase;
+	font-size: 115px;
+}
+
+.section_2 {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 140px 100px 0;
+	width: 100%;
+	min-height: 2000px;
+}
+
+.btn_ordenar {
+	position: relative;
+	background-color: #402683;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	font-family: Gotham-bold;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #FEA0C9;
+	padding: 10px 15px;
+	z-index: 30;
+}
+
+.btn_ordenar:hover {
+	background-color: #FEA0C9;
+	color: #402683;
+	padding: 10px 15px;
+	transition: 300ms;
+}
+
+.btn_ordenar:active {
+	scale: 0.90;
+	transition: 150ms;
+	outline: none;
+}
+
+.titulo_2 {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	right: 0;
+	color: #402683;
+}
+
+.ligth_c {
+	font-family: Gotham-ligth;
+	text-transform: uppercase;
+	font-size: 80px;
+}
+
+.bold_sf {
+	font-family: Gotham-bold-italic;
+	text-transform: uppercase;
+	font-size: 100px;
+	margin-top: -10px;
+}
+
+.carruseles_productos_1 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 80px;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.carrusel_1_chocolate {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.carrusel_2_dulce_de_leche {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.carrusel_3_cookies_cream {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.carrusel_1 {
+	background-color: #ffffff;
+	border-radius: 15px;
+	width: 260px;
+	height: 300px;
+	justify-content: center;
+	align-content: center;
+}
+
+.carrusel_2 {
+	background-color: #ffffff;
+	border-radius: 15px;
+	width: 260px;
+	height: 300px;
+	justify-content: center;
+	align-content: center;
+}
+
+.carrusel_3 {
+	background-color: #ffffff;
+	border-radius: 15px;
+	width: 260px;
+	height: 300px;
+	justify-content: center;
+	align-content: center;
+}
+
+.contenido_y_boton {
+	text-align: center;
+}
+
+.titulo_producto {
+	font-family: Gotham-bold;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #402683;
+}
+
+.contenido_producto {
+	font-family: Gotham-ligth;
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #402683;
+	margin-bottom: 20px;
+}
+
+.titulo_3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #402683;
+	width: 100%;
+	margin: 50px 0;
+}
+
+.ligth_n {
+	font-family: Gotham-ligth;
+	text-transform: uppercase;
+	font-size: 50px;
+}
+
+.bold_se {
+	font-family: Gotham-bold-italic;
+	text-transform: uppercase;
+	font-size: 50px;
+	margin-top: -10px;
+}
+
+.carruseles_productos_2 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 80px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.carrusel_4 {
+	display: flex;
+	position: relative;
+	background-color: #ffffff;
+	border-radius: 15px;
+	width: 260px;
+	height: 300px;
+}
+
+.carrusel_5 {
+	display: flex;
+	position: relative;
+	background-color: #ffffff;
+	border-radius: 15px;
+	width: 260px;
+	height: 300px;
+}
+
+.dulce_de_leche_section_2_2 {
+	display: flex;
+	position: relative;
+	left: 1320px;
+	bottom: 90px;
+	rotate: 200deg;
+	width: 300px;
+}
+
+.carrusel_4_choco_avellanas {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.carrusel_5_extra_chocolate {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section_4 {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 950px;
+	border: none;
+	outline: none;
+	padding: 50px;
+}
+
+.contenedor_seccion_4 {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #402683;
+	border-radius: 40px;
+	width: 80%;
+	max-width: 1100px;
+	min-height: 545px;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	border: none;
+	z-index: 50;
+}
+
+.titulo_4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	color: #FFEE0B;
+}
+
+.bold_cmsn {
+	font-family: Gotham-bold;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.ligth_eanw {
+	font-family: gotham-ligth;
+	text-transform: uppercase;
+	margin-top: -10px;
+	width: 100%;
+}
+
+.bold_yspdtf {
+	font-family: gotham-bold;
+	text-transform: uppercase;
+	margin-top: -10px;
+	width: 100%;
+}
+
+.imagenes_seccion_3 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0;
+}
+
+.bolsa--primera {
+	width: 250px;
+	transition: all 0.3s;
+}
+
+.bolsa--primera:hover {
+	transform: translatey(-10px);
+	transition: all 0.3s;
+}
+
+.bolsa--primera:active {
+	scale: 0.90;
+}
+
+.bolsa--segunda {
+	width: 250px;
+	transition: all 0.3s;
+}
+
+.bolsa--segunda:hover {
+	transform: translatey(-10px);
+	transition: all 0.3s;
+}
+
+.bolsa--segunda:active {
+	scale: 0.90;
+}
+
+.bolsa--tercera {
+	width: 250px;
+	transition: all 0.3s;
+}
+
+.bolsa--tercera:hover {
+	transform: translatey(-10px);
+	transition: all 0.3s;
+}
+
+.bolsa--tercera:active {
+	scale: 0.90;
+}
+
+.bolsa--cuarta {
+	width: 250px;
+	transition: all 0.3s;
+}
+
+.bolsa--cuarta:hover {
+	transform: translatey(-10px);
+	transition: all 0.3s;
+}
+
+.bolsa--cuarta:active {
+	scale: 0.90;
+}
+
+.btn_1 {
+	position: relative;
+	border: none;
+	outline: none;
+	margin-top: 50px;
+}
+
+.btn_stf {
+	display: flex;
+	position: relative;
+	background-color: #402683;
+	border: none;
+	outline: none;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	font-family: Gotham-bold;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #FEA0C9;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+.btn_stf:hover {
+	background-color: #FEA0C9;
+	color: #402683;
+	padding: 10px 15px;
+	transition: all 300ms;
+	border: solid 1px #402683;
+	text-decoration: none;
+}
+
+.btn_stf:active {
+	background-color: #402683;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	color: #FEA0C9;
+	padding: 10px 15px;
+	transition: all 300ms;
+	scale: 0.90;
+	text-decoration: none;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: #402683;
+	width: 100%;
+	height: 215px;
+	padding: 20px 50px;
+}
+
+.none {
+	text-decoration: none;
+	color: #ffffff93;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.flips_footer {
+	position: relative;
+	justify-content: space-between;
+}
+
+.flips_footer_redes {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+}
+
+.flips_logo {
+	height: 60px;
+}
+
+.redes_flips {
+	font-family: Gotham-bold;
+	color: #ffffff;
+	font-size: medium;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.flips {
+	padding: 20px;
+}
+
+.farmatodo_footer {
+	position: relative;
+	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	justify-items: center;
+}
+
+.farmatodo_logo {
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+.farmatodo_footer_redes {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+}
+
+.farmatodo_redes:hover {
+	opacity: 50%;
+}
+
+.farmatodo_redes:active {
+	scale: 0.9;
+}
+
+.flips_redes:hover {
+	opacity: 50%;
+}
+
+.flips_redes:active {
+	scale: 0.9;
+}
+
+.redes_iconos {
+	height: 50px;
+	filter: invert(100);
+}
+
+.farmatodo {
+	padding: 20px;
+}
+
+.redes_farmatodo {
+	font-family: Gotham-bold;
+	color: #ffffff;
+	font-size: medium;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.span {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: end;
+	top: 20px;
+	color: #ffffff41;
+	font-size: small;
+	font-family: Gotham-ligth;
+}
+
+.flips_vainilla_section_4 {
+	position: absolute;
+	width: 100%;
+	top: -150px;
+	left: -350px;
+	transition: 500ms ease-in-out;
+}
+
+.flips_vainilla_completo_section_4 {
+	rotate: 180deg;
+	height: 300px;
+}
+
+.flips_dulce_de_leche_completo_section_3 {
+	width: 15%;
+	position: relative;
+	top: 200px;
+	left: 850px;
+}
+
+
+@media (width <= 768px) {
+	body {
+		background-image: url("/img/png/fondo_responsive.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.choco_splash_1 {
+		display: flex;
+		position: relative;
+		top: -380px;
+		right: 325px;
+		width: 80%;
+		max-width: 902px;
+	}
+	.flips_dulce_de_leche_completo_section_3 {
+	width: 15%;
+    position: relative;
+    top: 200px;
+    left: 850px;
+}
+	.titulo_3 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: #402683;
+		width: 100%;
+		margin: 50px 0;
+	}
+
+	.ligth_italic_dl {
+		font-size: 90px;
+	}
+
+	.bold_d {
+		font-size: 65px;
+	}
+
+	.ligth_italic_tv {
+		font-size: 70px;
+	}
+
+	.choco_splash_1 {
+		top: 0;
+		right: 0;
+		width: 80%;
+		max-width: 902px;
+	}
+
+	.section_4 {
+		padding: 0;
+	}
+
+	.contenedor_seccion_4 {
+		width: 90%;
+	}
+
+	.redes_iconos {
+		height: 30px;
+	}
+
+	.redes_flips,
+	.redes_farmatodo {
+		font-size: 10px;
+	}
+
+	.farmatodo_logo {
+		height: 40px;
+	}
+
+	.flips_logo {
+		height: 80px;
+	}
+
+	.titulo_2 {
+		filter: drop-shadow(0px 0 1px #ffffff);
+		padding-top: 250px;
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		right: 0;
+		color: #402683;
+}
+	}
+
+	.ligth_c {
+		font-size: 30px;
+	}
+
+	.bold_sf {
+		font-size: 50px;
+	}
+
+	.ligth_n {
+		font-size: 40px;
+	}
+
+	.bold_se {
+		font-size: 40px;
+	}
+
+	.vainilla {
+		height: 300px;
+	}
+
+	.dulce_de_leche_section_2 {
+		height: 250px;
+	}
+
+	.titulo_3 {
+		padding-top: 140px;
+	}
+
+	.flips_dulce_de_leche_section_3 {
+		display: flex;
+		position: relative;
+		width: 100%;
+		left: 400px;
+		top: 200px;
+	}
+
+	.bolsa--primera,
+	.bolsa--segunda,
+	.bolsa--tercera,
+	.bolsa--cuarta {
+		width: 150px;
+	}
+
+	.imagen_flips_vainilla {
+		display: flex;
+		position: absolute;
+		left: 0;
+		top: -50px;
+		rotate: 150deg;
+		right: 400px;
+		width: 250px;
+		transition: transform ease-in-out;
+	}
+}
+

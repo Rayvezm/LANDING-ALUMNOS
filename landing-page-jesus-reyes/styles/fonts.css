@@ -1,0 +1,16 @@
+@font-face {
+    font-family: akzidentz ;
+    src: url("../fonts/AkzidenzGrotesk-ExtraBold.otf") format("opentype");
+}
+@font-face {
+    font-family: helvetica;
+    src: url("../fonts/HelveticaLTStd-LightObl.otf") format("opentype");
+}
+@font-face {
+    font-family: futura;
+    src: url("../fonts/FuturaStd-CondensedLight.otf") format("opentype");
+}
+@font-face {
+    font-family: futurahevy;
+    src: url("../fonts/FuturaStd-Heavy.otf") format("opentype");
+}

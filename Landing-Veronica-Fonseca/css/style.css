@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: "rubik", sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.swiper-button-prev::after{
+    font-size: 25px;
+}
+.swiper-button-next::after{
+    font-size: 25px;
+}
+
+.swiper-button-next{
+    color: #478bc9;
+}
+
+.swiper-button-prev{
+    color: #478bc9;
+}
+
+.swiper-pagination-bullet{
+    background-color: #478bc9;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #478bc9;
+}
+
+.menu{
+    background-color: #d7d7d7;
+    padding: 20px 50%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar{
+    display: flex;
+}
+
+.menu-1{
+    margin-right: 180px;
+}
+
+.menu-2{
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-1{
+    width: 0;
+}
+
+.logo-2{
+    width: 350px;
+}
+
+.socials{
+    display: flex;;
+}
+
+.social{
+    margin: 0 10px;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #478bc9;
+    border-radius: 50%;
+}
+
+.social:hover{
+    background-color: #478bc9;
+}
+
+.social img{
+    margin: 10px 0 0 8px;
+}
+
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li{
+    font-size: 12px;
+    padding: 20px;
+    color: #478bc9;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #478bc9;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+.fondo{
+    height: 1200PX;
+    width:100% ; 
+}
+
+.curva-1{
+    height: 400px;
+    width: 100%;
+    margin-top: -154px;
+}
+
+.d-item{
+    width: 10px ;
+}
+.d-img{
+    height: 50%;
+    object-fit: cover;
+    filter: brightness(0,6);
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+}
+
+.slider-txt{
+    margin-left: 85px;
+    width: 50%;
+}
+
+.botones{
+    margin-top: 30px;
+}
+.btn-1{
+    display: block;
+    padding: 15px 35px;
+    border: 2px solid #478bc9;
+    color: #030368;
+    font-weight: 800;
+    letter-spacing: 2px;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.btn-1:hover{
+    background-color: #478bc9;
+}
+
+.btn-2{
+    display: block;
+    padding: 15px 35px;
+    border: 2px solid #478bc9;
+    color: #030368;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.btn-2:hover{
+    background-color: #478bc9;
+}
+
+
+
+.btn-3{
+    display: block;
+    padding: 15px 35px;
+    border: 2px solid #478bc9;
+    color: #030368;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.btn-3:hover{
+    background-color: #478bc9;
+}
+
+.btn-4{
+    display: block;
+    padding: 15px 35px;
+    border: 2px solid #478bc9;
+    color: #030368;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.btn-4:hover{
+    background-color: #478bc9;
+}
+
+.btn-5{
+    display: block;
+    padding: 15px 35px;
+    border: 2px solid #478bc9;
+    color: #030368;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.btn-5:hover{
+    background-color: #478bc9;
+}
+
+.btn-6{
+    display: block;
+    padding: 15px 35px;
+    border: 2px solid #478bc9;
+    color: #030368;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.btn-6:hover{
+    background-color: #478bc9;
+}
+
+.slider-img{
+    width: 50%;
+    margin-top: -90px;
+}
+.descripcion{
+    display: inline-flexbox;
+    font-size: 16px;
+    align-items: center;
+}
+
+.estrellas{
+    width: 130px ;
+}
+.slider-img img{
+    margin-right: 225px;
+    width: 550px;
+}
+
+.variedad .container{
+    padding: 40px 50%;
+    background-color: #478bc9;
+}
+.variedad-info h2{
+    height: 40vh;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+.variedad1-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.variedad1-img img{
+    width: 100%;
+    margin-top: -70px;
+    width: 340px;
+}
+
+.variedad2-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.variedad2-img img{
+    width: 100%;
+    margin-top: -20px;
+    width: 340px;
+}
+.curva-2{
+    height: 150px;
+    width: 100%;
+    margin-top: -80px;
+}
+.fotmulario{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formulario-info h2{
+    height: 30vh;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    white-space: nowrap;
+    color: #478bc9;
+}
+form{
+    padding: 30px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 2);
+    border-radius: 50px;
+    text-align: center;
+    width: 340px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+label{
+    color: #030368;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #b1d6f9;
+    border: 2px solid #b1d6f9;
+    color: #030368;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+    caret-color: #030368;
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.form-txt a{
+    color: #181818;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn{
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #030368;
+    box-shadow: 0 0 20px rgba(69, 13, 236, 0.4);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #478bc9;
+}
+
+
+
+
+.footer{
+    padding: 40px 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fafafa;
+    background-color: #203159;
+}
+.logo-2{
+    width: 300px;
+}
+
+
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .menu-2{
+        display: none;
+    }
+
+    .logo-1{
+        width: 200px;
+    }
+
+    .logo-2{
+        width: 200px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header-content{
+        padding: 30px;
+        margin-top: 100px;
+    }
+    
+    .fondo{
+        height: 550px;
+        width: 100%;
+    }
+
+    .curva-1{
+        height: 153px;
+        width: 100%;
+        margin-top: -80px;
+
+    }
+
+    .slider{
+        flex-direction: column;
+    }
+
+    .slider-txt{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .slider-txt h1{
+        font-size: 50px;
+    }
+
+    .slider-txt p{
+        font-size: 16px;
+    }
+
+    .btn-1{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .btn-2{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .btn-3{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .btn-4{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .btn-5{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .btn-6{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .slider-img{
+        width: 100%;
+        text-align: center;
+    }
+    .descripcion{
+        display: inline-flexbox;
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .slider-img img{
+        margin-right: 0px;
+        width: 300px;
+    }
+    .variedad-info h2{
+        height: 40vh;
+        margin-top: -65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        white-space: nowrap;
+        color: #ffffff;
+    }
+    
+
+    .variedad .container{
+        height: 2250px;
+        width: 100%;
+        background-color: #478bc9;
+    }
+    
+    .variedad1-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .variedad1-img img{
+        width: 100%;
+        margin-top:-10px;
+        width: 260px;
+    }
+    
+    .variedad2-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .variedad2-img img{
+        width: 100%;
+        margin-top: -10px;
+        width: 260px;
+    }
+
+    .curva-2{
+        height: 90px;
+        width: 100%;
+        margin-top: -40px;
+    }
+
+    .swiper-horizontal> .swiper-pagination-bullet,
+    .swiper-pagination-bullet,.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction{
+        bottom: -7px;
+    }
+
+    .tabs{
+        padding: 50px 30px;
+    }
+
+    .tabs label{
+        width: 30%;
+    }
+
+    .formulario{
+        padding: 30px;
+    }
+
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input{
+        padding: 15px;
+    }
+
+
+
+
+
+    .footer{
+        padding: 40px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+}

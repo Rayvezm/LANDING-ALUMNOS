@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+}
+
+/*  header */
+.fondo{
+    height: 70px;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img{
+    height: 50px;
+    padding: 10px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+font-size: 20px;
+font-weight: 300;
+padding: 10px;
+color: #2b201b;
+display: block;
+
+}
+
+.menu .navbar ul li a:hover{
+    color:#e2001a;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width:50px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/* section hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #e8d9ae 5%, #f5efdd 40%);
+    background-size: cover;
+    background-position: center;
+    height: 720px;
+}
+
+.hero_izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero_izquierda img {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.hero_izquierda h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #e2001a;
+}
+
+.hero_izquierda p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    width: 450px;
+    color: #2b201b;
+    font-weight: 400;
+}
+
+.hero_button {
+    background-color: #2b201b;
+    font-size: 20px;
+    color: #f5efdd;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.hero_button:hover {
+    background-color: #98020e;
+}
+
+.hero_derecha {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero_derecha img {
+    height: auto;
+}
+
+/* section suscripcion */
+
+.subscripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #98020e;
+    height: 720px;
+}
+
+.subscripcion_izquierda {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscripcion_izquierda img {
+    max-height: 600px;
+    max-width: 600px;
+    object-fit: cover;
+}
+
+.subscripcion_derecha {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscripcion_caja {
+    background-color: #f5efdd; 
+    padding: 20px;
+    border-radius: 15px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subscripcion_caja h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #2b201b;
+    line-height: 1.2;
+    width: 400;
+    font-weight: 900;
+
+}
+
+.subscripcion_separador {
+    width: 200px;
+    height: 5px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-color: #2b201b
+}
+
+.subscripcion_caja h3 {
+    width: 400px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #2b201b;
+}
+
+.subscripcion_caja a {
+    background-color: #98020e; 
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.subscripcion_caja a:hover {
+    background-color: #2b201b; 
+}
+
+/* section recetas */
+
+.recetas {
+    background-color: #fff;
+    min-height: 720px;
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.recetas_arriba {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.recetas_arriba h1 {
+    font-size: 30px; 
+    padding: 20px;
+    line-height: 1.2;
+    color: #ff0000; 
+    text-align: center;
+    font-weight: 900;
+}
+
+.recetas_arriba  {
+    font-size: 20px;
+    color: #333;
+    max-width: 750px;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 400;
+}
+
+.recetas_arriba span {
+    color: #2b201b; 
+    font-weight: 900;
+}
+
+.recetas_bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: 50px;
+    gap: 50px;
+}
+
+.recetas_item {
+    background-color: #2b201b; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.recetas_item:hover {
+    transform: scale(1.05); 
+}
+
+.recetas_item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+}
+
+.recetas_item h2 {
+    display: flex;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #f5efdd;
+    padding: 20px;
+    width: 300px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* section promos */
+
+.promos {
+    background-color: #f5efdd; 
+    min-height: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.promos_izquierda {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 50px;
+    text-align: center; 
+}
+
+.promos_button {
+    background-color: #ff0000; 
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight:900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.promos_izquierda h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #2b201b;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: center; 
+    white-space: nowrap;
+}
+
+.promos_izquierda h1 {
+    font-size: 70px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #2b201b;
+    text-align: center;
+    margin-bottom:10px;
+    width:400px;
+}
+
+.promos_linea{
+    display: block;
+    text-align: center;
+    font-size: 55px;
+}
+
+.promos_descuento h2 {
+    font-size: 220px;
+    color: #e2001a;
+    margin-top: -20px;
+    line-height: 1;
+    font-weight: 900;
+    vertical-align:middle;
+    position: relative;
+    
+}
+
+.promos_descuento span {
+    font-size: 100px;
+    font-weight: 800 ;
+    color: #2b201b;
+    text-align: center;
+    vertical-align: 40px;
+}
+
+.promos_derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    gap: 50px;
+    flex: 1;
+    padding: 20px;
+}
+
+.promo-item {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 400px;
+}
+
+.promo-item:hover {
+    transform: scale(1.05);
+}
+
+.promo-item img {
+    width: 150px;
+    padding: 20px;
+    height: auto;
+}
+
+.promo-item h2{
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #2b201b;
+    padding: 10px;
+}
+
+.promo-itemseparador {
+    height: 2px;
+    width: auto;
+    margin: 10px;
+    background-color: #2b201b; 
+    border-radius: 12px;
+}
+
+.promo-item h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2b201b;
+}
+
+.promo-item a {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #2b201b;
+    color: #f5efdd;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.promo-item a:hover {
+    background-color: #e2001a;
+}
+
+.promo-item p {
+    color: gray;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #2b201b; 
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.footer_izquierda {
+    display: flex;
+    align-items: center;
+}
+
+.footer_izquierda img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.footer_farmainfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer_farmainfo h2 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer_link a {
+    font-size: 12px;
+    color: #f5efdd;
+    text-decoration: none;
+    border-bottom: 2px;
+    font-weight: 400;
+}
+
+.footer_link a:hover {
+    color: #e8d9ae; 
+}
+
+
+.footer_derecha {
+    display: flex;
+    gap: 15px;
+}
+
+.footer_derecha img {
+    width: auto;
+    height: 25;
+}
+
+/* pagina suscripcion */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 72px;
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.back-button {
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-logo {
+    height: 50px;
+    padding: 10px;
+}
+
+.pagina-titulo h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: #2b201b;
+    line-height: 1.2;
+    padding: 20px;
+}
+
+.pagina-titulo span {
+    color: #e2001a; 
+    font-size: 63px;
+    font-weight: 900; 
+}
+
+.subscripcion-pagina {
+    background: url(../img/webp/bgpaginasus.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscripcion-contenedor {
+    background-color: #2b201b; 
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.subscripcion-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.subscripcion-formulario  input {
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    background-color: #f5efdd;
+    color: #2b201b;
+}
+
+.subscripcion-formulario  input::placeholder {
+    color: #2b201b;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.enviar-button {
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #f5efdd;
+    background-color: #ff0000; 
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 180px; 
+    margin: 0 auto; 
+}
+
+.enviar-button:hover {
+    background-color: #98020e;
+}
+
+
+
+/* responsive header */
+
+@media(max-width:720px) {
+    .menu{
+        padding: 10px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .fondo{
+        padding: 30px
+    }
+
+    .menu .navbar{
+        position: absolute;
+        padding: 15px;
+        top: 60;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+}
+
+/* responsive hero */
+
+@media (max-width: 720px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero_izquierda {
+        margin-bottom: 1%;
+    }
+
+    .hero_derecha {
+        display: none; 
+    }
+}
+
+/* responsive suscripcion */
+
+@media (max-width: 720px) {
+    .subscripcion {
+        flex-direction: column;
+        height: auto;
+        padding: 80px;
+    }
+
+    .subscripcion_caja {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .subscripcion_izquierda img {
+        max-width: 80%; 
+        margin-bottom: 80px; 
+    }
+}
+
+/* responsive recetas */
+
+@media (max-width: 720px) {
+    .recetas_bottom {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .reccetas_item {
+        width: 100%; 
+        margin-bottom: 15px; 
+    }
+
+    .recetas_arriba h1 {
+        font-size: 50px;
+    }
+
+    .recetas_arriba p {
+        font-size: 20px;
+    }
+}
+
+/* responsive promos */
+@media (max-width: 720px) {
+    .promos {
+        flex-direction: column;
+    }
+
+    .promos_derecha {
+        flex-direction: column;
+    }
+
+    .promo-item {
+        margin-bottom: 20px;
+        max-width: none;
+    }
+}
+
+/* Responsive pagina de formulario */
+@media (max-width: 7px) {
+
+    .pagina-titulo {
+        font-size: 20px;
+    }
+
+    .subscripcion-formulario input {
+        font-size: 14px;
+    }
+
+    .enviar-button {
+        font-size: 14px;
+    }
+}

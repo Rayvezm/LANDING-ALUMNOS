@@ -1,0 +1,33 @@
+@font-face {
+    font-family: inter;
+    src: url("../font/Inter_24pt-Black.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: inter24ptbold;
+    src: url("../font/Inter_24pt-Bold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: inter24ptexbold;
+    src: url("../font/Inter_24pt-ExtraBold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: inter24ptsemibolt;
+    src: url("../font/Inter_24pt-SemiBold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: inter24ptmed;
+    src: url("../font/Inter_24pt-Medium.ttf");
+    font-style: normal;
+}

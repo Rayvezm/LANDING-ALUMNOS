@@ -1,0 +1,651 @@
+/* Estilos base */
+@font-face {
+    font-family: 'Thunder';
+    src: url('../fonts/Thunder.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik.ttf') format('truetype');
+}
+
+strong {
+    font-weight: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-family: 'Thunder', sans-serif;
+}
+
+/* Tamaño fijo de las secciones */
+section {
+    height: 820px;
+}
+
+/* HEADER */
+header {
+    background-color: #125099;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header-logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 0px;
+    background-image: url('../img/jpg/bg1.jpg');
+    background-size: cover;
+    height: 820px;
+    position: relative;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    width: 50%;
+    min-width: 500px;
+}
+
+.hero-left h2 {
+    color: #125099;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+.hero-left h1 {
+    color: #ed6936;
+    font-size: 140px;
+    line-height: 110px;
+    margin-top: 20px;
+}
+
+.farma-btn {
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #125099;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    height: 90px;
+    width: 340px;
+    border-radius: 30px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    text-decoration: none;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right {
+    flex: 1;
+    position: relative;
+    overflow: visible;
+    width: 50%;
+    min-width: 750px;
+    min-height: 820px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    overflow: visible;
+}
+
+/* SABORES */
+.sabores {
+    padding: 50px;
+    background-image: url('../img/jpg/bg2.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+.sabores-text {
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.sabores-text h1 {
+    font-size: 140px;
+    margin-top: 5px;
+}
+
+.sabores-text p {
+    margin-top: -10px;
+}
+
+.sabores-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sabor {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.26);
+    transition: transform 0.3s ease, height 0.3s ease;
+    border-radius: 15px;
+    width: 285px;
+    height: 375px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+}
+
+.sabor:hover {
+    transform: scale(1.05);
+    height: 445px;
+}
+
+.sabor h3 {
+    font-family: Thunder;
+    font-size: 80px;
+    color: #125099;
+    margin-top: 20px;
+}
+
+.sabor p {
+    font-family: Rubik;
+    color: #125099;
+}
+
+.buy-btn {
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ed6936;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 70%;
+    height: 50px;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    text-decoration: none;
+}
+
+.sabor:hover .buy-btn {
+    display: block;
+}
+
+/* PROMOCIÓN */
+.promocion {
+    display: flex;
+    padding: 50px;
+    background-image: url('../img/jpg/bg1.jpg');
+    background-size: cover;
+    height: 820px;
+    align-items: center;
+}
+
+.promocion-images {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promocion-images img {
+    max-width: 90%;
+    height: auto;
+}
+
+.promocion-text {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.promocion-text h1{
+    font-family: Thunder;
+    font-size: 140px;
+    color: #125099;
+    line-height: 120px;
+}
+
+.promocion-text p{
+    color: #125099;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.farma3-btn {
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ed6936;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    height: 90px;
+    width: 340px;
+    border-radius: 30px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.farma2-btn {
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ed6936;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    height: 90px;
+    width: 340px;
+    border-radius: 30px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* FORMULARIO */
+.formulario {
+    padding: 50px;
+    background-image: url('../img/jpg/bg2.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    width: 550px;
+    height: 640px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.form-container h3{
+    color: #125099;
+    font-family: Rubik;
+    font-weight: 600;
+}
+
+.form-container h2{
+    color: #ed6936;
+    font-family: Thunder;
+    font-size: 80px;
+    line-height: 65px;
+    margin-top: 10px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none; 
+    border-bottom: 2px solid #ccc; 
+    outline: none; 
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    transition: border-bottom 0.3s ease;
+}
+
+input:focus {
+    border-bottom: 2px solid #125099; 
+}
+
+.orange-btn {
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ed6936;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #fff;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.footer-logo {
+    height: 45px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 35px;
+}
+
+/* ------------------------ MEDIA QUERIES ------------------------ */
+
+@media (max-width: 1315px) {
+    section {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        overflow: hidden;
+        row-gap: 50px;
+        height: auto;
+        padding: 0px;
+    }
+
+    .hero-left{
+        position: relative;
+        z-index: 20;
+        height: 360px;
+    }
+
+    .hero-right{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 10;
+        align-items: center;
+    }
+    
+    .hero-right img {
+        content: url('../img/png/s1gRESP.png');
+        width: 100%;
+        transform: translateY(18px);
+    }
+
+    .farma-btn {
+        position: relative;
+        bottom: 20px;
+        transform: translateY(700px);
+        z-index: 10;
+    }
+
+    .footer-logo {
+        height: 35px;
+    }
+
+    .social-icons img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+.hero {
+    flex-direction: column;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 0px;
+    overflow: hidden;
+    row-gap: 50px;
+}
+
+.hero-left{
+    position: relative;
+    z-index: 20;
+    height: 360px;
+}
+
+.hero-right{
+    width: 100%;
+    height: 886px;
+    position: relative;
+    z-index: 10;
+    margin-top: -100px;
+}
+.hero-right img {
+    content: url('../img/png/s1gRESP.png');
+    width: 100%;
+    transform: translateY(18px);
+} */
+
+.farma-btn {
+    position: relative;
+    bottom: 20px;
+    transform: translateY(700px);
+    z-index: 10;
+}
+
+
+.promocion {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+    row-gap: 50px;
+    height: auto;
+    padding: 0px;
+    padding-top: 80px;
+}
+
+.promocion-text {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.promocion-images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+}
+.promocion-images img {
+    content: url('../img/png/manotlf.png');
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0px;
+    max-width: 100%;
+}
+
+.farma2-btn {
+    display: none;
+}
+
+.farma3-btn {
+    display: flex;
+    margin-top: -100px;
+}
+
+.formulario {
+    background-image: url('../img/jpg/bg3.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+}
+
+@media (max-width: 1069px) {
+
+    .sabor {
+        background-color: #fff;
+        padding: 30px;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.26);
+        transition: transform 0.3s ease, height 0.3s ease;
+        border-radius: 15px;
+        width: 285px;
+        height: 445px;
+        overflow: hidden;
+        position: relative;
+        margin: 10px;
+    }
+    
+    .sabor:hover {
+        transform: scale(1);
+        height: 445px;
+    }
+
+    .buy-btn {
+        font-family: Rubik;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #ed6936;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        display: block;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        width: 70%;
+        height: 50px;
+        transform: translateX(-50%);
+        border-radius: 15px;
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.26);
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .sabor:hover .buy-btn {
+        display: block;
+    }
+
+
+
+}
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-left: 0px;
+        overflow: hidden;
+        row-gap: 50px;
+    }
+    
+    .hero-left{
+        position: relative;
+        z-index: 20;
+        height: 360px;
+    }
+    
+    .hero-right{
+        width: 100%;
+        height: 886px;
+        position: relative;
+        z-index: 10;
+        margin-top: -200px;
+    }
+    .hero-right img {
+        content: url('../img/png/s1gRESP.png');
+        width: 100%;
+        transform: translateY(18px);
+    }
+    
+    .farma-btn {
+        position: relative;
+        bottom: 20px;
+        transform: translateY(700px);
+        z-index: 10;
+    }
+    
+    
+    }
+
+    @media (max-width: 768px) {
+     
+        .hero-right {
+            min-width: auto; 
+            margin-top: -250px;
+            transform: translateY(20px);
+        } 
+
+        .farma-btn {
+            position: relative;
+            bottom: 20px;
+            transform: translateY(600px);
+            z-index: 30;
+        } 
+}

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: artbrush;
+    src: url("../fonts/Artbrush.ttf") format("truetype");
+}
+@font-face {
+    font-family: Gothambo;
+    src: url("../fonts/Gotham-Book.ttf") format("truetype");
+}
+@font-face {
+    font-family: Gothamme;
+    src: url("../fonts/Gotham-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: Gothamita;
+    src: url("../fonts/Gotham-MediumItalic.ttf") format("truetype");
+}

@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+¨ body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Estilo de pagina */
+
+/* header */
+.header {
+    background-color: #2a2559;
+    padding: 10px 0;
+}
+
+/* inicio */
+.inicio {
+    background-color: #fff;
+    text-align: center;
+}
+
+/* banner del inicio*/
+.inicio__banner {
+    width: 100%;
+    /* La anchura será ajustada en función del tamaño de la pantalla */
+    margin: 0px;
+}
+
+/* CALL TO ACTION */
+.inicio__cta {
+    background-color: #009fdf;
+    color: white;
+    padding: 20px;
+    display: flex;
+}
+
+.inicio__cta--tex {
+    color: #ffff;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* estilo para el boton */
+.inicio__cta--button {
+    background-color: #2a2559;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.beneficio {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0px;
+}
+
+
+.inicio__banner {
+    display: flex;
+    width: 100%;
+    max-width: 1440;
+    margin: 0px;
+}
+
+/* Baner de la sección de benficios */
+.beneficios__banner--img {
+    max-width: 100%;
+    margin: 0%;
+}
+
+.beneficios__lista {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit,
+            minmax(150px, 1fr));
+    gap: 30px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.beneficio__icono {
+    width: 70px;
+    place-self: center;
+
+}
+
+.cta-unique__imagen {
+    width: 100%;
+}
+
+.cta {
+    background-color: #009fdf;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #2a2559;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 1spx;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.cta-unique__imagen {
+    width: 100%;
+    max-width: 1440px;
+    /* La anchura será ajustada en función del tamaño de la pantalla */
+    margin: 0px;
+    padding: 0px;
+}
+
+.testimonios {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.element__img {
+    width: 100%;
+    max-width: 300px;
+    /* Ajustar el tamaño de la imagen */
+}
+
+.element__tex {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #2a2559;
+}
+
+.footer {
+    background-color: #2a2559;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+}
+
+.footer__form {
+    margin-bottom: 5px;
+
+}
+
+.footer__icono {
+    max-width: 30px;
+}
+
+
+
+/* Ahora vamos con los @media 
+    responsividad*/
+@media (width>800px) {
+    .footer {
+        display: flex;
+    }
+
+    .footer__icono {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .element {
+        display: grid;
+        place-items: center;
+    }
+
+    .inicio__cta {
+        background-color: #009fdf;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .inicio__cta--tex {
+        color: #ffff;
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        display: flex;
+        place-items: center;
+    }
+
+    /* estilo para el boton */
+    .inicio__cta--button {
+        background-color: #2a2559;
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-left: 10px;
+        font-size: 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+}
