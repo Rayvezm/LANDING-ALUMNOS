@@ -1,0 +1,618 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.cabecera {
+	display: flex;
+	position: absolute;
+    top: 0;
+    left: 0;
+	background-color: #ffffff;
+	width: 100%;
+	height: 1956px;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+}
+.logo_farmatodo_svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 38px;
+    background-image: url("ima"); /* Reemplaza 'tu-imagen.png' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+.search-bar {
+    position: absolute;
+    top: 0; /* Alineado con la parte superior de la imagen */
+    left: 300px; /* A 40px a la derecha de la imagen */
+    width: 600px;
+    height: 38px;
+    border-radius: 10px;
+    border:1px solid #083d73; /* Color azul oscuro */
+    background-color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.login-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: #1f3767;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    top: 0; /* Alineado con la parte superior de la imagen */
+    left: 1000px;
+    width: 200px;
+    height: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Bold weight */
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0 16px; /* Horizontal padding to account for icon and text spacing */
+    gap: 8px; /* Space between icon and text */
+    transition: background-color 0.3s ease;
+}
+
+.login-button svg {
+    fill: #ffffff; /* Icon color */
+}
+
+.login-button span {
+    margin-left: 8px; /* Distance between icon and text */
+}
+
+.login-button:hover {
+    background-color: #345b8c; /* Lighter shade of #1f3767 */
+}
+.button-icon {
+    position:absolute;
+    top: 0; /* Alineado con la parte superior de la imagen */
+    left: 1220px; /* A 50px a la derecha del boton */
+    width: 29px;
+    height: 30px;
+    margin-right: 8px;
+}
+.bell-icon {
+    width: 34px;
+    height: 40px;
+    fill: #0e3f76; /* Color azul oscuro */
+    transition: fill 0.3s ease;
+    cursor: pointer;
+}
+.bell-icon:hover {
+    fill: #106fce; /* Azul más claro al pasar el cursor */
+}
+
+.container {
+    position:absolute;
+    left:0px;
+    top: 60px;
+}
+
+.line {
+    border: none;
+    border-top: 2px solid #106fce; 
+    width: 103%;
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0; /* Separación vertical de las líneas */
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 170px; /* Espaciado entre elementos del menú */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #106fce;
+    font-weight: 500; /* Medium weight */
+    transition: font-weight 0.3s ease;
+}
+
+.menu a:hover {
+    font-weight: 700; /* Bold weight */
+}
+.colgate_plax{
+	position:absolute;
+    left:0px;
+    top: 120px;
+    width: 850px;
+    height: 38px;
+    background-image: url("img/png/descuento-01.png"); /* Reemplaza 'tu-imagen.png' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center
+}
+
+.product-section {
+    position:absolute;
+    left:0px;
+    top: 790px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.verde {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    max-width: 500px;
+    height: auto;
+}
+
+.text-content {
+    flex: 2;
+    margin-right: 100px;
+}
+
+.bucal {
+    font-size: 2.5em;
+    color: #1f3767;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Ice-glacial {
+    font-size: 2.5em;
+    color: #1f3767;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.verde-description {
+    font-size: 1.2em;
+    color: #1f3767;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+.confidence-quote {
+    font-size: 1.5em;
+    color: #1f3767;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Medium */
+}
+
+.price-and-button {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.price-details {
+    margin-bottom: 20px;
+}
+
+.price-text {
+    font-size: 1.5em;
+    color: #1f3767;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Bold */
+}
+
+.buy-button {
+    padding: 10px 20px;
+    border: 2px solid #1f3767;
+    background-color: white;
+    color: #1f3767;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #1f3767;
+    color: white;
+}
+
+
+
+
+.gradient-section {
+    background: linear-gradient(to bottom, red, white);
+    position:absolute;
+    left:0px;
+    top: 1450px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.otra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.center-image {
+    max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.product-box {
+    width: 30%;
+    border: 2px solid #1f3767;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-title {
+    font-size: 1.5em;
+    color: #1f3767;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-subtitle {
+    font-size: 1.5em;
+    color: #1f3767;
+    margin: 5px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-price {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    border: 2px solid #1f3767;
+    background-color: white;
+    color: #1f3767;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #1f3767;
+    color: white;
+}
+
+/* Sección de promoción */
+.promotion-section {
+    background: linear-gradient(to bottom, white, #1f3767);
+    position:absolute;
+    left:0px;
+    top: 2420px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.promotion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promotion-title {
+    font-size: 3.5em;
+    font-weight: 800; /* ExtraBold */
+    font-style: italic;
+    color: red;
+    margin: 10px 0;
+}
+
+.promotion-info {
+    margin-bottom: 20px;
+}
+
+.promotion-subtitle {
+    font-size: 3em;
+    color: #1f3767;
+    font-weight: 800; /* ExtraBold */
+    display: flex;
+    align-items:normal;
+    justify-content: normal;
+}
+
+.plax-kinds {
+    font-weight: 700; /* ExtraBold */
+}
+
+.promo-rectangle {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 0px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.promo-text {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.promo-image {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.benefits-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.benefits-img {
+    max-width: 30%;
+    height: auto;
+}
+
+.benefits-text {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.benefits-title {
+    font-size: 3em;
+    color: #1f3767;
+    font-weight: 700; /* Bold */
+    margin-bottom: 10px;
+}
+
+.benefits-description {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    font-weight: 500; /* Medium */
+}
+
+.buy-button {
+    padding: 10px 20px;
+    border: 2px solid #1f3767;
+    background-color: #1f3767;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: white;
+    color: #1f3767;
+}
+
+
+.enjuague-white {
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    position:absolute;
+    left:0px;
+    top: 3710px;
+    padding: 20px;
+}
+
+.product-blanco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-grand {
+    font-size: 2.5em;
+    font-weight: 800; /* ExtraBold */
+    font-style: italic;
+    color: #1f3767;
+    margin: 0;
+}
+
+.colgate {
+    color: red;
+}
+
+.subtitulo {
+    font-size: 2.5em;
+    font-weight: 800; /* ExtraBold */
+    color: #1f3767;
+}
+
+.product-description {
+    font-size: 1.2em;
+    font-weight: 400; /* Regular */
+    color: #1f3767;
+    margin: 20px 0;
+}
+
+.technology-title {
+    font-size: 1.5em;
+    font-weight: 600; /* Bold */
+    color: red;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.feature-box {
+    background-color: #1f3767;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 15%;
+    text-align: center;
+}
+
+.feature-box p {
+    margin: 2px 0;
+    font-weight: 700; /* Bold */
+}
+
+.purchase-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #1f3767;
+    font-weight: 600; /* Bold */
+}
+
+.buy-button {
+    padding: 10px 20px;
+    border: 2px solid #1f3767;
+    background-color: #1f3767;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800; /* ExtraBold */
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: white;
+    color: #1f3767;
+}
+
+.product-image {
+    flex: 1;
+    text-align: center;
+}
+
+.image {
+    max-width: 105%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #1f3767;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    font-size: 1.2em;
+    font-weight: 800; /* ExtraBold */
+    margin: 10px 0;
+    cursor: pointer;
+    transition: font-size 0.3s;
+}
+
+.footer-link:hover {
+    font-size: 1.5em;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
